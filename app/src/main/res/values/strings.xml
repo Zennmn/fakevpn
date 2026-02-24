@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FakeVPN</string>
+    <string name="module_description">伪装设备正在使用 VPN 连接</string>
+    <string name="module_active">模块已激活</string>
+    <string name="module_inactive">模块未激活，请在 LSPosed 中启用</string>
+    <string name="hook_transport_vpn">伪装 VPN Transport</string>
+    <string name="hook_transport_vpn_desc">拦截 NetworkCapabilities.hasTransport()，注入 TRANSPORT_VPN 标志</string>
+    <string name="hook_network_interface">伪装 VPN 网卡接口</string>
+    <string name="hook_network_interface_desc">在 NetworkInterface 枚举中注入假 tun0 接口</string>
+    <string name="hook_active_network">伪装活动网络类型</string>
+    <string name="hook_active_network_desc">将 getActiveNetworkInfo() 返回的网络类型改为 VPN</string>
+</resources>
